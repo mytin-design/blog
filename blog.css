@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: .4pc;
+}
+
+/* z-index not used: property to define the stacking context of the header container;*/
+/* The header or navWrapper has position as fixed as the recommended property; sticky may function as well;  meant to stick at the top when the body elements scroll */
+
+.nav-wrapper {
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: .2pc;
+    color: #fff;
+    background-color: rgb(243, 203, 44);
+}
+
+div, article {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: rgba(255, 248, 220, 0.291);
+    box-shadow: 0 0 .5pc rgba(111, 102, 102, 0.37);
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 20px;
+    grid-template-rows: auto;
+    margin: 65px auto;
+    padding: 20px 20px;
+}
+
+.profile-box {
+    height: 30vh;
+}
+
+.profile-box, .ads {
+    position: sticky;
+    top: 10%;
+}
+
+
+.ads {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 60ch;
+}
+
+.foo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10ch;
+    background: rgba(34, 31, 19, 0.905);
+}
+
+.foo > a {
+    color: aliceblue;
+    text-decoration: none;
+}
